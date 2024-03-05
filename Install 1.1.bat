@@ -61,6 +61,7 @@ if errorlevel 2 (
 curl -o "C:\Tools\Installers\Advanced_IP_Scanner_2.5.4594.1.exe" "https://download.advanced-ip-scanner.com/download/files/Advanced_IP_Scanner_2.5.4594.1.exe"
 echo Installing Program...
 C:\Tools\Installers\Advanced_IP_Scanner_2.5.4594.1.exe /silent
+mklink "%USERPROFILE%\Desktop\shortcut_name.lnk" "%root%\Program Files\CrystalDiskInfo\DiskInfo32.exe"
 if errorlevel 6 (
   echo The installation has failed please make sure you have access to the internet.
 ) else (
