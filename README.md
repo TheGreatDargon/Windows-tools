@@ -6,7 +6,7 @@ If you are going to use this batch file you need to do a couple of things.
 2. Put the listed installers in this folder
 3. Run the "Install.bat" file
 
-Note: the install.bat file should be run as administrator for it to properly work. I will prompt for administrator credentials each time otherwise.
+Note: the install.bat file should be run as administrator for it to properly work. It will prompt for administrator credentials each time otherwise.
 
 CURRENT LIST OF INSTALLERS
 
