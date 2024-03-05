@@ -7,6 +7,7 @@ If you are going to use this batch file you need to do a couple of things.
 3. Run the "Install.bat" file
 
 Note: the install.bat file should be run as administrator for it to properly work. It will prompt for administrator credentials each time otherwise.
+- There is no way to create the shortcut for IP_Scanner without specifying what the root directory is by default it should be C: but if this is not the case it will need to be changed
 
 CURRENT LIST OF INSTALLERS
 
