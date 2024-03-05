@@ -38,6 +38,8 @@ if errorlevel 2 (
 
 curl -o "C:\Tools\Installers\7z2301-x64.msi" "https://www.7-zip.org/a/7z2301-x64.msi"
 Echo Installing Program...
+
+#No need to make a shortcut for this one, it doesn't normally have a shortcut
 msiexec /i "C:\Tools\Installers\7z2301-x64.msi" /passive
 
 if errorlevel 6 (
@@ -61,8 +63,9 @@ if errorlevel 2 (
 curl -o "C:\Tools\Installers\Advanced_IP_Scanner_2.5.4594.1.exe" "https://download.advanced-ip-scanner.com/download/files/Advanced_IP_Scanner_2.5.4594.1.exe"
 echo Installing Program...
 
-#No need to make a shortcut for this one, it doesn't normally have a shortcut
+
 C:\Tools\Installers\Advanced_IP_Scanner_2.5.4594.1.exe /silent
+mklink "%USERPROFILE%\Desktop\IP Scanner" "%root%\"
 
 if errorlevel 6 (
   echo The installation has failed please make sure you have access to the internet.
@@ -130,7 +133,7 @@ if errorlevel 2 (
 curl -L -o "C:\Tools\Installers\MacroRecorderSetup.exe" "https://www.macrorecorder.com/MacroRecorderSetup.exe"
 Echo Installing Program...
 C:\Tools\Installers\MacroRecorderSetup.exe /silent
-mklink "%USERPROFILE%\Desktop\shortcut_name.lnk" "%root%\Program Files\CrystalDiskInfo\DiskInfo32.exe"
+mklink "%USERPROFILE%\Desktop\MacroRecorder" "%root%\Program Files (x86)\MacroRecorder\MacroRecorder.exe"
 if errorlevel 6 (
   echo The installation has failed please make sure you have access to the internet.
 ) else (
@@ -152,7 +155,7 @@ if errorlevel 2 (
 curl -L -o "C:\Tools\Installers\MBSetup.exe" "https://www.malwarebytes.com/api/downloads/mb-windows?filename=MBSetup.exe"
 Echo Installing Program...
 C:\Tools\Installers\MBSetup.exe /silent
-mklink "%USERPROFILE%\Desktop\shortcut_name.lnk" "%root%\Program Files\CrystalDiskInfo\DiskInfo32.exe"
+mklink "%USERPROFILE%\Desktop\MalwareBytes" "%root%\"
 if errorlevel 6 (
   echo The installation has failed please make sure you have access to the internet.
 ) else (
