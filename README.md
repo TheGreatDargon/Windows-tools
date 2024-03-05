@@ -25,5 +25,4 @@ CURRENT LIST OF INSTALLERS
 
 Plans for future edits to the "Install.bat" script
 
-	- Have this create shortcuts for them. Specify folder?
 	- Find more to add to the batch file.
