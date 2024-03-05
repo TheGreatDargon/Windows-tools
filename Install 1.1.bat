@@ -71,7 +71,7 @@ if errorlevel 6 (
 ::====================================================================================================================================================================================================================================================================
 :CrystalDiskInfo
 cls
-ECHO Installing CrystalDiskInfo9_1_1.exe... This is a Disk Health Tool. Press 'Y' to confirm or 'N' to cancel.
+ECHO Installing CrystalDiskInfo.exe... This is a Disk Health Tool. Press 'Y' to confirm or 'N' to cancel.
 
 choice /c YN
 
@@ -80,7 +80,7 @@ if errorlevel 2 (
 	pause
 	goto :CrystalDiskMark
 )
-curl -L -o "C:\Tools\Installers\CrystalDiskInfo9_1_1.exe" "https://crystalmark.info/redirect.php?product=CrystalDiskInfoInstaller"
+curl -L -o "C:\Tools\Installers\CrystalDiskInfo.exe" "https://crystalmark.info/redirect.php?product=CrystalDiskInfoInstaller"
 Echo Installing Program...
 C:\Tools\Installers\CrystalDiskInfo9_1_1.exe /silent
 if errorlevel 6 (
