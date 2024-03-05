@@ -60,8 +60,10 @@ if errorlevel 2 (
 )
 curl -o "C:\Tools\Installers\Advanced_IP_Scanner_2.5.4594.1.exe" "https://download.advanced-ip-scanner.com/download/files/Advanced_IP_Scanner_2.5.4594.1.exe"
 echo Installing Program...
+
+#No need to make a shortcut for this one, it doesn't normally have a shortcut
 C:\Tools\Installers\Advanced_IP_Scanner_2.5.4594.1.exe /silent
-mklink "%USERPROFILE%\Desktop\shortcut_name.lnk" "%root%\Program Files\CrystalDiskInfo\DiskInfo32.exe"
+
 if errorlevel 6 (
   echo The installation has failed please make sure you have access to the internet.
 ) else (
@@ -83,7 +85,8 @@ if errorlevel 2 (
 )
 curl -L -o "C:\Tools\Installers\CrystalDiskInfo.exe" "https://crystalmark.info/redirect.php?product=CrystalDiskInfoInstaller"
 Echo Installing Program...
-C:\Tools\Installers\CrystalDiskInfo9_1_1.exe /silent
+C:\Tools\Installers\CrystalDiskInfo.exe /silent
+mklink "%USERPROFILE%\Desktop\CrystalDiskInfo" "%root%\Program Files\CrystalDiskInfo\DiskInfo32.exe"
 if errorlevel 6 (
   echo The installation has failed please make sure you have access to the internet.
 ) else (
@@ -105,6 +108,7 @@ if errorlevel 2 (
 curl -L -o "C:\Tools\Installers\CrystalDiskMark8_0_4c.exe" "https://crystalmark.info/redirect.php?product=CrystalDiskMarkInstaller"
 Echo Installing Program...
 C:\Tools\Installers\CrystalDiskMark8_0_4c.exe /silent
+mklink "%USERPROFILE%\Desktop\CrystalDiskMark" "%root%\CrystalDiskMark8\DiskMark64.exe"
 if errorlevel 6 (
   echo The installation has failed please make sure you have access to the internet.
 ) else (
@@ -126,6 +130,7 @@ if errorlevel 2 (
 curl -L -o "C:\Tools\Installers\MacroRecorderSetup.exe" "https://www.macrorecorder.com/MacroRecorderSetup.exe"
 Echo Installing Program...
 C:\Tools\Installers\MacroRecorderSetup.exe /silent
+mklink "%USERPROFILE%\Desktop\shortcut_name.lnk" "%root%\Program Files\CrystalDiskInfo\DiskInfo32.exe"
 if errorlevel 6 (
   echo The installation has failed please make sure you have access to the internet.
 ) else (
@@ -147,6 +152,7 @@ if errorlevel 2 (
 curl -L -o "C:\Tools\Installers\MBSetup.exe" "https://www.malwarebytes.com/api/downloads/mb-windows?filename=MBSetup.exe"
 Echo Installing Program...
 C:\Tools\Installers\MBSetup.exe /silent
+mklink "%USERPROFILE%\Desktop\shortcut_name.lnk" "%root%\Program Files\CrystalDiskInfo\DiskInfo32.exe"
 if errorlevel 6 (
   echo The installation has failed please make sure you have access to the internet.
 ) else (
@@ -168,6 +174,7 @@ if errorlevel 2 (
 curl -L -o "C:\Tools\Installers\nmap-7.94-setup.exe" "https://nmap.org/dist/nmap-7.94-setup.exe"
 Echo Installing Program...
 C:\Tools\Installers\nmap-7.94-setup.exe /silent
+mklink "%USERPROFILE%\Desktop\shortcut_name.lnk" "%root%\Program Files\CrystalDiskInfo\DiskInfo32.exe"
 if errorlevel 6 (
   echo The installation has failed please make sure you have access to the internet.
 ) else (
@@ -189,6 +196,7 @@ if errorlevel 2 (
 curl -L -o "C:\Tools\Installers\npp.8.5.4.Installer.x64.exe" "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.5.4/npp.8.5.4.Installer.x64.exe"
 Echo Installing Program...
 C:\Tools\Installers\npp.8.5.4.Installer.x64.exe /S
+mklink "%USERPROFILE%\Desktop\shortcut_name.lnk" "%root%\Program Files\CrystalDiskInfo\DiskInfo32.exe"
 if errorlevel 6 (
   echo The installation has failed please make sure you have access to the internet.
 ) else (
@@ -210,6 +218,7 @@ if errorlevel 2 (
 curl -L -o "C:\Tools\Installers\speedtestbyookla_x64.msi" "https://install.speedtest.net/app/windows/latest/speedtestbyookla_x64.msi"
 Echo Installing Program...
 msiexec /i "C:\Tools\Installers\speedtestbyookla_x64.msi" /passive
+mklink "%USERPROFILE%\Desktop\shortcut_name.lnk" "%root%\Program Files\CrystalDiskInfo\DiskInfo32.exe"
 if errorlevel 6 (
   echo The installation has failed please make sure you have access to the internet.
 ) else (
@@ -231,6 +240,7 @@ if errorlevel 2 (
 curl -L -o "C:\Tools\Installers\windirstat1_1_2_setup.exe" "https://sourceforge.net/projects/windirstat/files/latest/download#"
 Echo Installing Program...
 C:\Tools\Installers\windirstat1_1_2_setup.exe /S
+mklink "%USERPROFILE%\Desktop\shortcut_name.lnk" "%root%\Program Files\CrystalDiskInfo\DiskInfo32.exe"
 if errorlevel 6 (
   echo The installation has failed please make sure you have access to the internet.
 ) else (
@@ -252,6 +262,7 @@ if errorlevel 2 (
 curl -L -o "C:\Tools\Installers\sublime_text_build_4143_x64_setup.exe" "https://download.sublimetext.com/sublime_text_build_4143_x64_setup.exe"
 Echo Installing Program...
 C:\Tools\Installers\sublime_text_build_4143_x64_setup.exe /silent
+mklink "%USERPROFILE%\Desktop\shortcut_name.lnk" "%root%\Program Files\CrystalDiskInfo\DiskInfo32.exe"
 if errorlevel 6 (
   echo The installation has failed please make sure you have access to the internet.
 ) else (
@@ -273,6 +284,7 @@ if errorlevel 2 (
 curl -L -o "C:\Tools\Installers\Wireshark-win64-4.0.7.exe" "https://2.na.dl.wireshark.org/win64/Wireshark-win64-4.0.7.exe"
 Echo Installing Program...
 C:\Tools\Installers\Wireshark-win64-4.0.7.exe /S
+mklink "%USERPROFILE%\Desktop\shortcut_name.lnk" "%root%\Program Files\CrystalDiskInfo\DiskInfo32.exe"
 if errorlevel 6 (
   echo The installation has failed please make sure you have access to the internet.
 ) else (
