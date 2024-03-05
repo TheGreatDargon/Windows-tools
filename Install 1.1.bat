@@ -40,6 +40,7 @@ Echo Installing Program...
 
 msiexec /i "C:\Tools\Installers\7z2301-x64.msi" /passive
 
+
 if errorlevel 6 (
   echo The installation has failed please make sure you have access to the internet.
 ) else (
@@ -62,6 +63,7 @@ curl -o "C:\Tools\Installers\Advanced_IP_Scanner_2.5.4594.1.exe" "https://downlo
 echo Installing Program...
 
 C:\Tools\Installers\Advanced_IP_Scanner_2.5.4594.1.exe /silent
+mklink "%USERPROFILE%\Desktop\IP_Scanner" "%root%\Program Files (x86)\Advanced IP Scanner\advanced_ip_scanner.exe"
 
 if errorlevel 6 (
   echo The installation has failed please make sure you have access to the internet.
