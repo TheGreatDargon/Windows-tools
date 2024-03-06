@@ -1,4 +1,4 @@
-Hello, I am the creator of this "Install" batch file, which installs a number of tools i think are useful for windows.
+Hello, I am the creator of this "Install" batch file, which installs a number of tools I think are useful for windows.
 
 If you are going to use this batch file you need to do a couple of things.
 
